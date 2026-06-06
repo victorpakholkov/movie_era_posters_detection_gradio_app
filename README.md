@@ -13,3 +13,5 @@ Repository includes Jupyter notebook (movies_posters_classifier), featuring the 
 Example pics are provided under corresponding files.
 
 **Feel free to use it as an example for your own projects or basis for further developments, like fine-tuning the model further or testing your own models with it!**
+
+https://www.ozon.ru/product/otparivatel-dlya-odezhdy-ruchnoy-garlyn-gs-15-parogenerator-moshchnyy-dlya-doma-4100373055/?oos_search=false&reviewsVariantMode=1
