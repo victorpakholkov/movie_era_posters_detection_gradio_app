@@ -15,3 +15,51 @@ Example pics are provided under corresponding files.
 **Feel free to use it as an example for your own projects or basis for further developments, like fine-tuning the model further or testing your own models with it!**
 
 https://www.ozon.ru/product/otparivatel-dlya-odezhdy-ruchnoy-garlyn-gs-15-parogenerator-moshchnyy-dlya-doma-4100373055/?oos_search=false&reviewsVariantMode=1
+
+{
+    "inbounds": [
+        {
+            "listen": "127.0.0.1",
+            "port": 10808,
+            "protocol": "socks",
+            "settings": {
+                "udp": true
+            }
+        }
+    ],
+    "log": {
+        "loglevel": "error"
+    },
+    "outbounds": [
+        {
+            "protocol": "vless",
+            "settings": {
+                "vnext": [
+                    {
+                        "address": "144.31.250.188",
+                        "port": 489,
+                        "users": [
+                            {
+                                "encryption": "none",
+                                "flow": "xtls-rprx-vision",
+                                "id": "bdad2e92-1d68-4c37-b791-1dd63de44578"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "realitySettings": {
+                    "fingerprint": "chrome",
+                    "publicKey": "sbzxQTC3WSVzZUM_IBrhYBQf98c033pqIW8ENxODgjc",
+                    "serverName": "www.ya.ru",
+                    "shortId": "aff5e489026f18c8",
+                    "spiderX": ""
+                },
+                "security": "reality"
+            }
+        }
+    ]
+}
+
