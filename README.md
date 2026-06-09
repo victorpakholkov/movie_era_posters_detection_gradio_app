@@ -14,52 +14,32 @@ Example pics are provided under corresponding files.
 
 **Feel free to use it as an example for your own projects or basis for further developments, like fine-tuning the model further or testing your own models with it!**
 
-https://www.ozon.ru/product/otparivatel-dlya-odezhdy-ruchnoy-garlyn-gs-15-parogenerator-moshchnyy-dlya-doma-4100373055/?oos_search=false&reviewsVariantMode=1
+[Interface]
+Address = 10.8.1.2/32
+DNS = 1.1.1.1, 1.0.0.1
+PrivateKey = 6+viIFJFL9BDn3VvtWJoFei7UiNfQRfkQAZvwhju2fs=
+Jc = 6
+Jmin = 10
+Jmax = 50
+S1 = 58
+S2 = 57
+S3 = 9
+S4 = 0
+H1 = 341089683-458551086
+H2 = 1423593339-2004175975
+H3 = 2018546589-2141035731
+H4 = 2146422428-2146482034
+I1 = <b 0x084481800001000300000000077469636b65747306776964676574096b696e6f706f69736b0272750000010001c00c0005000100000039001806776964676574077469636b6574730679616e646578c025c0390005000100000039002b1765787465726e616c2d7469636b6574732d776964676574066166697368610679616e646578036e657400c05d000100010000001c000457fafe25>
+I2 = 
+I3 = 
+I4 = 
+I5 = 
 
-{
-    "inbounds": [
-        {
-            "listen": "127.0.0.1",
-            "port": 10808,
-            "protocol": "socks",
-            "settings": {
-                "udp": true
-            }
-        }
-    ],
-    "log": {
-        "loglevel": "error"
-    },
-    "outbounds": [
-        {
-            "protocol": "vless",
-            "settings": {
-                "vnext": [
-                    {
-                        "address": "144.31.250.188",
-                        "port": 489,
-                        "users": [
-                            {
-                                "encryption": "none",
-                                "flow": "xtls-rprx-vision",
-                                "id": "bdad2e92-1d68-4c37-b791-1dd63de44578"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "streamSettings": {
-                "network": "tcp",
-                "realitySettings": {
-                    "fingerprint": "chrome",
-                    "publicKey": "sbzxQTC3WSVzZUM_IBrhYBQf98c033pqIW8ENxODgjc",
-                    "serverName": "www.ya.ru",
-                    "shortId": "aff5e489026f18c8",
-                    "spiderX": ""
-                },
-                "security": "reality"
-            }
-        }
-    ]
-}
+[Peer]
+PublicKey = 7VURorJk74ffAMudgaR5EXXESj2Nw+k3KTgZAHajxD8=
+PresharedKey = Fu/ntlNp2L9qFpTbZcv+fC6dle2GHIjkKN/O4bSw0/0=
+AllowedIPs = 0.0.0.0/0, ::/0
+Endpoint = 144.31.250.188:42481
+PersistentKeepalive = 25
+
 
